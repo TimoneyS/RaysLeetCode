@@ -1,6 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * Find the City With the Smallest Number of Neighbors at a Threshold Distance

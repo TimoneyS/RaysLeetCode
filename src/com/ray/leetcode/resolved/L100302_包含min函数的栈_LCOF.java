@@ -1,6 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 包含min函数的栈 LCOF

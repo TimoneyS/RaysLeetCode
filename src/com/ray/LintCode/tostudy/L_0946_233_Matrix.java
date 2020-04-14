@@ -1,6 +1,6 @@
 package com.ray.LintCode.tostudy;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 import com.ray.util.Timer;
 
 /**

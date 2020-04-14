@@ -1,6 +1,6 @@
 package com.ray.LintCode.locked;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

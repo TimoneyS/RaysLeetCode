@@ -1,8 +1,8 @@
 package com.ray.LintCode.util;
 
-import static com.ray.io.Out.p;
+import static import com.ray.util.Out;.p;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 import com.ray.util.StringUtil;
 
 public class ExpressionTreeNode {

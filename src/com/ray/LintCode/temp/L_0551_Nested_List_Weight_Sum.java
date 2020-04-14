@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.List;
 import java.util.Queue;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 import com.ray.leetcode.util.NestedInteger;
 
 /**

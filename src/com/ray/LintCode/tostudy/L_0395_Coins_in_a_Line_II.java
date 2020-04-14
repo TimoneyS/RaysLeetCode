@@ -1,6 +1,6 @@
 package com.ray.LintCode.tostudy;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * n 个不同面值的硬币排成一线，两个玩家轮流拿一个或者两枚硬币。最终拿到的所有硬币的面值之和最大的玩家为胜利。

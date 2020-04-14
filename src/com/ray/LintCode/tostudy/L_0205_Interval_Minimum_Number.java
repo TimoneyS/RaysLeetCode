@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.ray.LintCode.util.Interval;
 import com.ray.LintCode.util.SegmentTreeNode;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

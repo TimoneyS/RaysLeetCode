@@ -1,12 +1,12 @@
 package com.ray.leetcode.util;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 import com.ray.util.StringUtil;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import static com.ray.io.Out.p;
+import static import com.ray.util.Out;.p;
 
 public class TreeNode {
     

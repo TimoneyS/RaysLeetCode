@@ -3,7 +3,7 @@ package com.ray.LintCode.temp;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

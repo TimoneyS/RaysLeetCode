@@ -1,6 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 把数字翻译成字符串 LCOF

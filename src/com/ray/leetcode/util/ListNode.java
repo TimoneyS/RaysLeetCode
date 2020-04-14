@@ -1,6 +1,6 @@
 package com.ray.leetcode.util;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 import java.util.Random;
 import java.util.Scanner;

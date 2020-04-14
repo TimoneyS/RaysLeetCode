@@ -1,7 +1,7 @@
 package com.ray.leetcode.resolved;
 
 import com.ray.leetcode.util.TreeNode;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * Validate Binary Search Tree

@@ -1,6 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * Partition Array Into Three Parts With Equal Sum

@@ -1,6 +1,6 @@
 package com.ray.leetcode;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * $TITLE

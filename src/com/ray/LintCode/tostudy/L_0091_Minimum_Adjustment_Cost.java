@@ -3,7 +3,7 @@ package com.ray.LintCode.tostudy;
 import java.util.Arrays;
 import java.util.List;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.ray.LintCode.util.Point;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

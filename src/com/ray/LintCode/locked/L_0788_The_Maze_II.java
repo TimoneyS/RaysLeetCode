@@ -3,7 +3,7 @@ package com.ray.LintCode.locked;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

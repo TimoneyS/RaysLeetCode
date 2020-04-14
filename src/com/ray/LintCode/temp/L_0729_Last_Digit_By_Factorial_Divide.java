@@ -1,10 +1,11 @@
 package com.ray.LintCode.temp;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：
- *      We are given two numbers `A` and `B` such that `B >= A`. We need to compute the last digit of this resulting F such that F = `B! / A!` where 1 <= A, B <= `10^18` (A and B are very large)
+ *      We are given two numbers `A` and `B` such that `B >= A`. We need to compute the last digit of this resulting F such that F = `B! / A!` where 1 <= A, B <= `10^18` (A and B are very large)
+
  *
  * 用例：
  *      ```

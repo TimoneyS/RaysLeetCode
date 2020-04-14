@@ -1,7 +1,7 @@
 package com.ray.leetcode.resolved;
 
 import com.ray.io.In;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import com.ray.LintCode.util.OutputCollector;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

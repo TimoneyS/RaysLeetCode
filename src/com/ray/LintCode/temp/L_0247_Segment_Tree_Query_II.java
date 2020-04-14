@@ -1,7 +1,7 @@
 package com.ray.LintCode.temp;
 
 import com.ray.LintCode.util.SegmentTreeNode;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

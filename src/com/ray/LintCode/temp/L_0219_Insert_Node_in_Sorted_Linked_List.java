@@ -1,7 +1,7 @@
 package com.ray.LintCode.temp;
 
 import com.ray.leetcode.util.ListNode;
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 向有序的链表中插入新结点

@@ -2,7 +2,7 @@ package com.ray.LintCode.tostudy;
 
 import java.util.ArrayList;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

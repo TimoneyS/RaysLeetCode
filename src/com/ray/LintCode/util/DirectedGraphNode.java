@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 public class DirectedGraphNode {
     public int                          label;

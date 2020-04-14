@@ -3,7 +3,7 @@ package com.ray.LintCode.temp;
 import java.util.HashMap;
 import java.util.Set;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：

@@ -1,6 +1,6 @@
 package com.ray.LintCode.tostudy;
 
-import com.ray.io.Out;
+import com.ray.util.Out;
 
 /**
  * 描述：
@@ -34,7 +34,8 @@ import com.ray.io.Out;
  *      ```
  *
  * 挑战：
- *      If the count of numbers is bigger than 2^32, can your code work properly?
+ *      If the count of numbers is bigger than 2^32, can your code work properly?
+
  *
  * 难度： Simple
  *   
