@@ -1,4 +1,4 @@
-package com.ray.leetcode;
+package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
 
@@ -41,15 +41,13 @@ import com.ray.util.Out;
  */
 public class L0923_Super_Egg_Drop {
     /**
-     * dp[i][j] 表示 i 个鸡蛋，楼层为 j 时，最小的移动次数
+     * dp[i][j] 表示 i 个 鸡蛋，j层楼，需要的最小移动次数
      *
-     * 假设第一次在第 k 层扔鸡蛋
-     * 如果鸡蛋没有碎，那么就等于在 k+1到 j 的楼层中，用 i 个鸡蛋继续寻找，也等于在 j - k - 1 个楼层中继续找，即 dp[i][j-k-1]
-     * 如果鸡蛋碎了，那么可用的鸡蛋数少 1，就等于用 i - 1 个鸡蛋在 k-1层楼中寻找，即 dp[i-1][k-1]
-     * 要考虑最坏的情况
-     * 因此  dp[i][j] = 1 + max{dp[i][j-k-1], dp[i-1][k]}
-     *
-     * 算法时间复杂度为 O(k*N*N) 需要优化
+     * 首先在 l 层尝试：
+     *      如果鸡蛋碎了：那么 F 就在 l 以下，可用的鸡蛋数量  -1，结果为 dp[i-1][l-1]
+     *      如果鸡蛋没碎：那么 F 就在 l 以上，可用的鸡蛋数量不变，结果为 dp[i][j-l-1]
+     * 然后总是考虑最坏的情况
+     *      dp[i][j] = 1 + max(dp[i-1][l-1], dp[i][j-l-1])
      */
     static class Solution {
         public int superEggDrop(int K, int N) {
@@ -63,14 +61,23 @@ public class L0923_Super_Egg_Drop {
 
             for (int i = 2; i <= K; i++) {
                 for (int j = 2; j <= N; j++) {
-                    dp[i][j] = 2 * N;
-                    for (int k = 1; k < j; k++) {
-                        dp[i][j] = Math.min(dp[i][j], 1 + Math.max(dp[i-1][k], dp[i][j-k-1]));
+                    int l = 1, h = j;
+                    while (l + 1 < h) {
+                        int x = (l + h) / 2;
+                        int t1 = dp[i-1][x-1];
+                        int t2 = dp[i][j-x  ];
+                        if (t1 < t2)
+                            l = x;
+                        else if (t1 > t2)
+                            h = x;
+                        else
+                            l = h = x;
                     }
+                    dp[i][j] = 1 + Math.min(
+                            Math.max(dp[i-1][h-1], dp[i][j-h]),
+                            Math.max(dp[i-1][l-1], dp[i][j-l]));
                 }
             }
-
-            Out.p(dp, "%2s ");
             return dp[K][N];
         }
     }

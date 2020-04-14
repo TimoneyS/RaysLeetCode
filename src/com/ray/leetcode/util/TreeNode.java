@@ -1,12 +1,7 @@
 package com.ray.leetcode.util;
 
-import com.ray.util.Out;
-import com.ray.util.StringUtil;
-
 import java.util.ArrayDeque;
 import java.util.Queue;
-
-import static import com.ray.util.Out;.p;
 
 public class TreeNode {
     
@@ -79,22 +74,10 @@ public class TreeNode {
     }
     
     public static void show(TreeNode root) {
-        p("== tree ===========================");
-        if (root != null) tree(root, 0, 1);
-        p("===================================");
     }
 
     public static void tree(TreeNode node, int type, int deepth) {
-        if(node == null) return;
-        tree(node.right, 1, deepth+1);
-        String suffix = StringUtil.multiString(' ', deepth * 5);
-        if (type == 0) {
-            Out.pf("%s--[%s]\n", suffix, node.val);
-        } else if (type > 0) {
-            Out.pf("%s /[%s]\n", suffix, node.val);
-        } else {
-            Out.pf("%s \\[%s]\n", suffix, node.val);
-        }
+
         tree(node.left, -1, deepth+1);
     }
     

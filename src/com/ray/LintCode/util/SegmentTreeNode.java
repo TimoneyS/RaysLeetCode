@@ -1,9 +1,7 @@
 package com.ray.LintCode.util;
 
-import static import com.ray.util.Out;.p;
-
 import com.ray.util.Out;
-import com.ray.util.StringUtil;
+
 
 public class SegmentTreeNode {
     public int start, end, max, count;
@@ -22,15 +20,15 @@ public class SegmentTreeNode {
     }
     
     public static void show(SegmentTreeNode root) {
-        p("== tree ===========================");
+        Out.p("== tree ===========================");
         if (root != null) tree(root, 0, 1);
-        p("===================================");
+        Out.p("===================================");
     }
 
     public static void tree(SegmentTreeNode node, int type, int deepth) {
         if(node == null) return;
         tree(node.right, 1, deepth+1);
-        String suffix = StringUtil.multiString(' ', deepth * 5);
+        String suffix = " ";
         if (type == 0) {
             Out.pf("%s--[%s-%s](%s,%s)\n", suffix, node.start, node.end, node.count, node.max);
         } else if (type > 0) {
