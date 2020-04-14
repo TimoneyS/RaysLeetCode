@@ -1,10 +1,13 @@
 package com.ray.leetcode.util;
 
+import com.ray.util.Out;
+import com.ray.util.StringUtil;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class TreeNode {
-    
+
     public int      val;
     public TreeNode left, right;
 
@@ -12,11 +15,11 @@ public class TreeNode {
         this.val = val;
         this.left = this.right = null;
     }
-    
+
     public static String serialize(TreeNode root) {
         Queue<TreeNode> queue = new ArrayDeque<>();
         if (root != null) queue.add(root);
-        
+
         TreeNode dummy = new TreeNode(0);
         StringBuilder sb = new StringBuilder("{");
         while (!queue.isEmpty()) {
@@ -30,17 +33,17 @@ public class TreeNode {
             }
             sb.append(",");
         }
-        
+
         while (sb.charAt(sb.length()-2) == '#') {
             sb.setLength(sb.length()-2);
         }
-        
+
         if (sb.charAt(sb.length()-1) == ',') {
             sb.setCharAt(sb.length()-1, '}');
         } else {
             sb.append('}');
         }
-            
+
         return sb.toString();
     }
 
@@ -49,7 +52,7 @@ public class TreeNode {
         TreeNode pile = new TreeNode(0);
         Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(pile);
-        
+
         boolean isLeft = false;
         for (String val : dataArr) {
             if (!val.equals("#")) {
@@ -68,32 +71,39 @@ public class TreeNode {
         }
         return pile.right;
     }
-    
+
     public void show() {
         TreeNode.show(this);
     }
-    
+
     public static void show(TreeNode root) {
+        Out.p("== tree ===========================");
+        if (root != null) tree(root, 0, 1);
+        Out.p("===================================");
     }
 
     public static void tree(TreeNode node, int type, int deepth) {
-
+        if(node == null) return;
+        tree(node.right, 1, deepth+1);
+        String suffix = StringUtil.multiString(' ', deepth * 5);
+        if (type == 0) {
+            Out.pf("%s--[%s]\n", suffix, node.val);
+        } else if (type > 0) {
+            Out.pf("%s /[%s]\n", suffix, node.val);
+        } else {
+            Out.pf("%s \\[%s]\n", suffix, node.val);
+        }
         tree(node.left, -1, deepth+1);
     }
-    
+
     @Override
     public String toString() {
         return val+"";
     }
-    
-    
+
+
     public static void main(String[] args) {
-        
         TreeNode root = TreeNode.parse("{1,2,3,#,4,5,6,7,8}");
-        
         TreeNode.show(root);
-        
-        
     }
-    
 }
