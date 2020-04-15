@@ -1,4 +1,4 @@
-package com.ray.LintCode.temp;
+package com.ray.LintCode.tostudy;
 
 import java.util.Arrays;
 
