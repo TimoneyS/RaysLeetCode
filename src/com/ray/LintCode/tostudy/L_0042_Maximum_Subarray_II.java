@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.ray.util.Out;
-import com.ray.util.Assert;
 
 /**
  * 描述：
@@ -83,8 +82,6 @@ public class L_0042_Maximum_Subarray_II {
         List<Integer> numsL = Arrays.asList(nums);
         
         int max = new Solution().maxTwoSubArrays(numsL);
-        
-        Assert.assertEquals(max, 7);
         
         Out.p(max);
     }

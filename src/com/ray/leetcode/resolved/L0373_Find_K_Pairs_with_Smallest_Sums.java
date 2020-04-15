@@ -1,6 +1,5 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.io.In;
 import com.ray.util.Out;
 
 import java.util.*;
