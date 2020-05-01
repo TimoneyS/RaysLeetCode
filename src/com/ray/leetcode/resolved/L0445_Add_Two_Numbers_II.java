@@ -1,6 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.leetcode.util.ListNode;
+import com.ray.util.ListNode;
 import com.ray.util.Out;
 
 /**

@@ -1,7 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.util.Out;
-import com.ray.leetcode.util.TreeNode;
+import com.ray.util.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

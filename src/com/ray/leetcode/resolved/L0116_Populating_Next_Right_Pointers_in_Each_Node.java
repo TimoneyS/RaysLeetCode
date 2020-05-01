@@ -1,7 +1,7 @@
 package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
-import com.ray.leetcode.util.Node;
+import com.ray.util.Node;
 
 /**
  * Populating Next Right Pointers in Each Node

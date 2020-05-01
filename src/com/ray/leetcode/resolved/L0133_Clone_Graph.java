@@ -2,7 +2,7 @@ package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
 
-import com.ray.leetcode.util.GraphNode.Node;
+import com.ray.util.GraphNode.Node;
 import java.util.*;
 
 /**

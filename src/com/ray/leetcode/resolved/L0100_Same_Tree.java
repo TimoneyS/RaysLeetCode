@@ -1,5 +1,5 @@
 
-import com.ray.leetcode.util.TreeNode;
+import com.ray.util.TreeNode;
 import com.ray.util.Out;
 
 /**

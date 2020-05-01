@@ -1,7 +1,7 @@
 package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
-import com.ray.leetcode.util.NestedInteger;
+import com.ray.util.NestedInteger;
 
 import java.util.Stack;
 

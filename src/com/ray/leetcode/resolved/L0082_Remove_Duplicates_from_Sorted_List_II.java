@@ -1,7 +1,7 @@
 package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
-import com.ray.leetcode.util.ListNode;
+import com.ray.util.ListNode;
 
 /**
  * Remove Duplicates from Sorted List II

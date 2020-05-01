@@ -1,6 +1,6 @@
 package com.ray.leetcode.resolved;
 
-import com.ray.leetcode.util.NestedInteger;
+import com.ray.util.NestedInteger;
 
 import java.util.Iterator;
 import java.util.List;

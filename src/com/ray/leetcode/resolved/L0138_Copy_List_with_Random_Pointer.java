@@ -1,7 +1,7 @@
 package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
-import com.ray.leetcode.util.RandomNode.Node;
+import com.ray.util.RandomNode.Node;
 
 import java.util.HashMap;
 
