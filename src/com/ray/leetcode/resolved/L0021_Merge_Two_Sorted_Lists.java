@@ -28,13 +28,13 @@ public class L0021_Merge_Two_Sorted_Lists {
         public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
             ListNode pile = new ListNode(0);
             ListNode n = pile;
-            while (true) {
+            while (l1 != null || l2 != null) {
                 if (l1 == null) {
                     n.next = l2;
-                    break;
+                    l2 = null;
                 } else if (l2 == null) {
                     n.next = l1;
-                    break;
+                    l1 = null;
                 } else if (l1.val < l2.val) {
                     n.next = l1;
                     n = n.next;
