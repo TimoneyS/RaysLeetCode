@@ -1,4 +1,4 @@
-package com.ray.leetcode.resolved;
+package com.ray.leetcode.sql;
 
 import com.ray.util.Out;
 
