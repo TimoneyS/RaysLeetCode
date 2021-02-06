@@ -23,11 +23,10 @@ import java.util.Map;
  * @link    https://leetcode-cn.com/problems/two-sum/
  * @since   2020-02-13 17:46:36
  */
-public class L0001_Two_Sum {
+public class L0001_TwoSum {
     /**
-     * b = target - aW
-     * 如果知道了 a， 那么只要在数组中寻找 target - a 即可。
-     * 可以构建一个数组值到坐标的映射，然后对于每个 a 寻找否存在 target - a 到坐标的映射
+     * 如果当前数字是 a，那么我们只要找到数组中所有的 target - a 的位置
+     * 为了快速的寻找，可以用map建立数字和下标的映射
      */
     static class Solution {
         public int[] twoSum(int[] nums, int target) {
