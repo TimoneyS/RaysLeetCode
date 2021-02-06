@@ -47,8 +47,10 @@ public class L0015_3Sum {
 
         private void twoSum(int[] nums, int start, List<List<Integer>> rs) {
             Set<Integer> walked = new HashSet<>();
+            Set<Integer> unique = new HashSet<>();
             for (int i = start + 1; i < nums.length; i++) {
-                if (walked.contains(-nums[start] - nums[i])) {
+                if (walked.contains(-nums[start] - nums[i]) && !unique.contains(nums[i])) {
+                    unique.add(nums[i]);
                     rs.add(Arrays.asList(nums[start], -nums[start] - nums[i], nums[i]));
                 }
                 walked.add(nums[i]);
@@ -57,7 +59,7 @@ public class L0015_3Sum {
     }
 
     public static void main(String[] args) {
-        int[] nums = {-2, 1, 1, 1, 1, 1};
+        int[] nums = {0,0,0,0};
         Out.p(new Solution().threeSum(nums));
     }
 }
