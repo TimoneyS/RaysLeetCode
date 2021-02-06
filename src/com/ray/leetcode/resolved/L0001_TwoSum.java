@@ -1,4 +1,4 @@
-package com.ray.leetcode.trans;
+package com.ray.leetcode.resolved;
 
 import com.ray.util.Out;
 
